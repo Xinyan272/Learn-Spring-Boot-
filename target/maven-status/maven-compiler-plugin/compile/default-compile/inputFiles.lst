@@ -1,2 +1,6 @@
 /Users/xinyandu/Learn-Spring-Boot-/src/main/java/com/xinyan/controller/MyController.java
+/Users/xinyandu/Learn-Spring-Boot-/src/main/java/com/xinyan/model/Tutorial.java
+/Users/xinyandu/Learn-Spring-Boot-/src/main/java/com/xinyan/repository/TutorialRepository.java
+/Users/xinyandu/Learn-Spring-Boot-/src/main/java/com/xinyan/service/ITutorialService.java
 /Users/xinyandu/Learn-Spring-Boot-/src/main/java/com/xinyan/Application.java
+/Users/xinyandu/Learn-Spring-Boot-/src/main/java/com/xinyan/service/TutorialService.java
