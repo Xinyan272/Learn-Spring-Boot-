@@ -1,16 +1,15 @@
 package com.xinyan.service;
 import java.util.List;
-import java.util.Optional;
-
 import com.xinyan.model.Tutorial;
 
 public interface ITutorialService {
-    List<Tutorial> findAll();
-    List<Tutorial> findByTitleContaining(String title);
-    Optional<Tutorial> findById(long id);
+    List<Tutorial> findAllTutorials(String title);
+    Tutorial findTutorial(long id);
     Tutorial saveTutorial(Tutorial tutorial);
+    Tutorial updateTutorial(long id, Tutorial tutorial);
+
     void deleteById(long id);
     void deleteAll();
 
-    List<Tutorial> findByPublished(boolean published);
+    List<Tutorial> findPublishedTutorials(boolean published);
 }

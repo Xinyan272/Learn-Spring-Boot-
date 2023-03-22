@@ -1,6 +1,7 @@
 package com.xinyan.model;
 import javax.persistence.*;
 
+
 @Entity
 @Table(name = "tutorials")
 public class Tutorial {
@@ -26,6 +27,13 @@ public class Tutorial {
 		this.description = description;
 		this.published = published;
 	}
+
+	public Tutorial(long id, String title, String description, boolean published) {
+		this.id = id;
+		this.title = title;
+		this.description = description;
+		this.published = published;
+	  }
 
 	public long getId() {
 		return id;
