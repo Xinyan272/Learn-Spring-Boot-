@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Springboot-tutorial
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: Springboot-tutorial
+  template:
+    metadata:
+      labels:
+        app: Springboot-tutorial
+    spec:
+      containers:
+        - name: app
+          image: xinyan272/spring-tutorial:1.0
+          ports:
+            - containerPort: 8080
+          imagePullPolicy: Always
